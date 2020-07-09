@@ -62,8 +62,8 @@ $(document).ready(function(){
 	Music Player Section
 */
 
-var songs = ["Music/spyro.mp3", "Music/hip.mp3"];
-var posters = ["Images/spyro.png", "Images/Button.png"];
+var songs = ["Music/spyro.mp3", "Music/hip.mp3", "Music/stop.mp3"];
+var posters = ["Images/spyro.png", "Images/Button.png", "Images/motivateicon.png"];
 var currentSong  = 0;
 var playButton = document.getElementById('play_button');
 var player = document.getElementById('music_player');
@@ -181,11 +181,11 @@ function next() {
 }
 
 /**
-	Background Change Section
+	Video Change Section
 */
 
 
-var videos = ['Videos/BestVideo.mp4', 'Videos/gamegrumps.mp4'];
+var videos = ['Videos/BestVideo.mp4', 'Videos/gamegrumps.mp4', 'Videos/walk.mp4'];
 var currentVideo = 0;
 var vidPlayer = document.getElementById('videoPlayer');
 
@@ -206,7 +206,7 @@ function prevVideo() {
 
 function nextVideo() {
 	if(currentVideo == videos.length-1) {
-		currentVideo = videos.length-1;
+		currentVideo = 0;
 	}
 	else {
 		currentVideo++;
@@ -329,7 +329,3 @@ function changeToEasterTheme() {
 	shelfInner.style.background = "#f0bdde";
 	deskFront.style.background = "#f0bdde";
 }
-
-/**
-	Video Player Section
-*/
