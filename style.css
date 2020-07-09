@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+	display: flex;
+	cursor: auto;
+}
+
+.wall {
+	margin: auto;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	display: flex;
+	background-color: #dab3ff;
+}
+
+.desk {
+	margin: auto;
+	width: 100vw;
+	height: 400px;
+	position: absolute;
+	display: flex;
+	background-color: #994d00;
+	top: 75%;
+}
+
+.shelfInner {
+	margin: auto;
+	width: 100vw;
+	height: 50px;
+	position: absolute;
+	display: flex;
+	background-color: #804000;
+	top: -10%;
+}
+
+.deskFront {
+	margin: auto;
+	width: 100vw;
+	height: 350px;
+	position: absolute;
+	display: flex;
+	background-color: #804000;
+	top: 100%;
+}
+
+.musicWindow {
+	width: 700px;
+	height: 250px;
+	position: absolute;
+	display: flex;
+	background: url(Images/musicWindow.png) no-repeat;
+}
+
+.computer {
+	margin: auto;
+	width: 500px;
+	height: 360px;
+	position: relative;
+}
+
+.monitor {
+	width: 800px;
+	height: 400px;
+	background-color: grey;
+	border-radius: 5px 5px 5px 5px;
+	position: absolute;
+	left: -30%;
+	top: -10%;
+}
+
+.screen {
+	width: 700px;
+	height: 350px;
+	background-color: lightblue;
+	border-radius: 5px 5px 5px 5px;
+	position: absolute;
+	left: 6%;
+	top: 6%;
+}
+
+.stand {
+	width: 40px;
+	height: 100px;
+	background-color: grey;
+	position: absolute;
+	left: 45%;
+	top: 100%;
+}
+
+.holder {
+	width: 200px;
+	height: 40px;
+	background-color: grey;
+	position: absolute;
+	border-radius: 100px 100px 100px 100px;
+	left: -200%;
+	top: 80%;
+}
+
+table, td {
+  width: 450px;
+}
+
+.controls {
+	display:flex;
+	position: absolute;
+	bottom: 0;
+	width: 70%;
+	flex-wrap: wrap;
+	background: rgba(0,0,0,0.7);
+}
+
+.textTime {
+	color: pink;
+}
+
+.bar {
+	height: 10px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+.juice {
+	height: 10px;
+	background-color: pink;
+}

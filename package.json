@@ -1,0 +1,28 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "Music Player App",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcoolu/Music-Player.git"
+  },
+  "author": "jcoolu (Jamie Coulombe)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcoolu/Music-Player/issues"
+  },
+  "homepage": "https://github.com/jcoolu/Music-Player#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "fs": "0.0.1-security",
+    "jquery": "^3.5.1",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.1",
+    "sqlite": "^4.0.10",
+    "url": "^0.11.0"
+  }
+}

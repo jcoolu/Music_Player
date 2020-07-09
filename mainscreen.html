@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Music Player </title>
+	<link rel = "stylesheet" href="style.css">
+	<script>window.$ = window.jQuery = require('jquery');</script>
+	<script>require('bootstrap');</script>
+	<script> require('url');</script>
+</head>
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+<body>
+<div class = "wall" id = "wall" >
+	<img src = "Images/board.png" id = "board" width = "600px" height = "600px"> </img>
+	<img src = "Images/window_spyro.gif" style="margin-top:40px; margin-left: 450px;" height="600px" width="670px">
+</div>
+	<div class = "desk" id="desk"> 
+	 
+		<div class = "shelfInner" id = "shelfInner">
+			<img src = "Images/spyro.png" id = "figurines" height = "250px" width = "550px" > </img>
+		</div>
+		<img src = "Images/keyboard.png" id = "keyboard" style="margin-left:320px;" width="1100px"> 
+		<img src = "Images/mousepad.png" id = "mousepad" height = "350px" width = "350px" style="margin-top:40px;">
+		<img src = "Images/spyro_mug.gif" id = "mug" style="margin-top:-40px;" height="350px" width="250px">
+		<div class = "deskFront" id ="deskFront"> </div>
+	</div>
+	<div class = "computer">
+		
+		<div class = "monitor"> 
+			<div class = "screen">
+			<table id = "iconsTable" >
+				<tr>
+				<td>
+				<input type="image" id = "home" src="Images/homeicon.png" width="60" height="60" style="margin-left:10px; margin-top:10px"> </input>
+				<input type="image" id = "music" src="Images/musicicon.png" width="60" height="60" style="margin-left:10px; margin-top:10px"> </input>
+				</td>
+				</tr>
+				<tr> 
+				<td>
+				<input type="image" id = "background" src="Images/backgroundicon.png" width="60" height="60" style="margin-left:10px; margin-top:10px"> </input>
+				<input type="image" id = "motivate" src="Images/motivateicon.png" width="60" height="60" style="margin-left:10px; margin-top:10px"> </input>
+				</td>
+				</tr>
+				<tr>
+				<td>
+				<input type="image" id = "camera" src="Images/cameraicon.png" width="60" height="60" style="margin-left:10px; margin-top:10px"> </input>
+				</td>
+				</tr>
+				
+			</table>
+						<div id='player' style="display:none">
+						<div class = "musicWindow" id = "musicWindow" style = "margin-left:100px">
+							<table id = "musicTable" >
+								<tr>
+								<td>
+								<img src="" width="130px" height="130px" id = "poster" style="margin-left: 160px; margin-right:160px; margin-top:20px">
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<audio id="music_player" >
+								</audio>	
+								
+							<div class="controls">
+							<p class = "textTime"  id = "textTime">0:00 / 0:00</p>
+								<div class="bar">
+									<div class="juice"></div>
+								</div>
+								<div class = "buttons"> 
+									<input type="image" src="Images/play.png" onclick="playToggle()" id="play_button" class = "play" width="30" height="30" style = "margin-top: 20px"> 
+									<input type="image" src="Images/stop.png" onclick="stopAudio()" id="stop_button" width="30" height="30"> 
+									<input type = "image" src="Images/volume.png" id="vol_img" width="30" height="30"> 
+									<input type="range" id="change_vol" onchange="changeVolume()" step="0.05" min="0" max="1" value="1">
+									<input type = "image" src="Images/backward.png" id="back_img" onclick = "prev()"width="30" height="30">
+									<input type = "image" src="Images/forward.png" id="forward_img" onclick = "next()" width="30" height="30"> 									
+								</div>
+							</div>
+							</td>
+							</tr>
+							</table>
+							</div>
+						</div>
+						
+						
+						<div id='backgroundWindow' style="display:none">
+						<div class = "musicWindow" id = "musicWindow" style = "margin-left:100px">
+							<table id = "backgroundTable" >
+								<tr>
+								<td>
+								<input type="image" id = "buttonDragon" onclick="changeToDragonTheme()" src="Images/buttonDragon.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								<input type="image" id = "buttonCafe" onclick="changeToCafeTheme()" src="Images/buttonCafe.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								<input type="image" id = "buttonVamp" onclick="changeToVampireTheme()" src="Images/buttonDevil.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								<input type="image" id = "buttonHallow" onclick="changeToHalloweenTheme()" src="Images/buttonHalloween.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								</td>
+								</tr>
+								<tr>
+								<td>
+								<input type="image" id = "buttonThanks" onclick="changeToThanksTheme()" src="Images/buttonThanksgiving.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								<input type="image" id = "buttonChristmas" onclick="changeToChristmasTheme()" src="Images/buttonChristmas.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								<input type="image" id = "buttonEaster" onclick="changeToEasterTheme()" src="Images/buttonEaster.png" width="60" height="60" style="margin-left:20px; margin-top:30px"> </input>
+								</td>
+								</tr>
+							</table>
+						</div>
+						</div>
+						<div id='videoWindow' style="display:none">
+						<div class = "musicWindow" id = "musicWindow" style = "margin-left:100px">
+							<table id = "videoTable" >
+								<tr>
+								<td>
+								<video id ="videoPlayer" width="360" height="250" controls>
+									<source type="video/mp4" src = "Videos/BestVideo.mp4">
+								</video>
+									<input type = "image" src="Images/backward.png" id="back" onclick = "prevVideo()"width="30" height="30">
+									<input type = "image" src="Images/forward.png" id="forward" onclick = "nextVideo()" width="30" height="30"> 	
+								</td>
+								</tr>
+							</table>
+						</div>
+						</div>
+			</div>
+		</div>
+		<div class = "stand">
+			<div class = "holder">
+			</div>
+		</div>
+
+	</div>
+	<script type = "text/javascript" src = "index.js"> </script>
+</body>
+</html>
+			
