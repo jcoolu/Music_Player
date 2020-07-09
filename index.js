@@ -62,7 +62,7 @@ $(document).ready(function(){
 	Music Player Section
 */
 
-var songs = ["Music/spyro.mp3", "Music/bofl.mp3"];
+var songs = ["Music/spyro.mp3", "Music/hip.mp3"];
 var posters = ["Images/spyro.png", "Images/Button.png"];
 var currentSong  = 0;
 var playButton = document.getElementById('play_button');
