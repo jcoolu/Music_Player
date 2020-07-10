@@ -6,7 +6,7 @@
 
 - [Features](#Features)
 - [How to Install](#how-to-install)
-- ![Smile](/application/Images/smile.png)[Credits](#credits) 
+- [Credits](#credits) 
  
  
 ## Features <a name = "Features"></a> 
