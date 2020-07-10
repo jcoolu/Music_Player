@@ -246,6 +246,7 @@ var desk = document.getElementById('desk');
 var shelfInner = document.getElementById('shelfInner');
 var deskFront = document.getElementById('deskFront');
 
+
 function changeToDragonTheme() {
 	mousepad.src = "Images/mousepad.png";
 	mug.src = "Images/spyro_mug.gif";
