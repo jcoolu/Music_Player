@@ -62,15 +62,24 @@ $(document).ready(function(){
 	Music Player Section
 */
 
-var songs = ["Music/spyro.mp3", "Music/hip.mp3", "Music/stop.mp3"];
-var posters = ["Images/spyro.png", "Images/Button.png", "Images/motivateicon.png"];
-var currentSong  = 0;
+// list of songs you want to play
+var songs = 
+["Music/spyro.mp3", 
+"Music/hip.mp3", 
+"Music/stop.mp3"];
+
+// assigned pictures according to order of song list
+var posters = 
+["Images/spyro.png", 
+"Images/Button.png", 
+"Images/motivateicon.png"];
+
+var currentSong  = 0; // current song playing
 var playButton = document.getElementById('play_button');
 var player = document.getElementById('music_player');
 var poster = document.getElementById('poster');
-var juice = document.querySelector('.juice');
+var juice = document.querySelector('.juice'); // progress
 var bar = document.querySelector('.bar');
-var duration;
 
 document.addEventListener("DOMContentLoaded", function() { startplayer(); }, false);
 
@@ -89,6 +98,7 @@ player.addEventListener('timeupdate', function() {
 	var min = Math.floor(player.duration/60);
 	var sec = Math.round(player.duration - (min * 60));
 	
+	// process for setting current time of song being played (current time) / song length
 	if(secNow < 10) {
 		document.getElementById("textTime").innerHTML = minNow + ":" + "0" + secNow + " / " + min + ":" + sec; 
 	}
@@ -107,6 +117,8 @@ player.addEventListener('timeupdate', function() {
 	}
 })
 
+// tried to add a click function to the progress bar to add
+// the ability to time seek through the song.
 bar.addEventListener('click', function(event) {
 	var position = (event.offsetX) / (player.duration);
 	console.log(event.offsetX);
@@ -114,7 +126,7 @@ bar.addEventListener('click', function(event) {
 });
 
 /*
-	startPlayer - Starts music player with music given. 
+	startPlayer - Starts music player with current song. 
 */
 function startplayer() 
 {
@@ -123,6 +135,9 @@ function startplayer()
 	player.controls = false; 
 }
 
+/* 
+	playToggle - plays/pauses current song. 
+*/
 function playToggle() 
 {
 	if(player.paused) {
@@ -152,6 +167,10 @@ function changeVolume()
  player.volume=document.getElementById("change_vol").value;
 }
 
+/*
+	prev - when button is clicked, it goes to previous song in list
+	if on first song, it loops back to the last song of the list given.
+*/ 
 function prev() {
 	
 	if(currentSong == 0) {
@@ -161,12 +180,16 @@ function prev() {
 		currentSong--;
 	}
 	
-	startplayer();
-	player.play();
+	startplayer(); // start song
+	player.play(); // play song
 	playButton.src = "Images/pause.png";
 	poster.src = posters[currentSong];
 }
 
+/* 
+	next - when button is clicked, it goes to the next song in the list.
+	If on last song of list, it loops back to first song.
+*/
 function next() {
 	currentSong++;
 	console.log(currentSong);
@@ -184,15 +207,25 @@ function next() {
 	Video Change Section
 */
 
+// list of videos being played
+var videos = 
+['Videos/BestVideo.mp4', 
+'Videos/gamegrumps.mp4', 
+'Videos/walk.mp4'];
 
-var videos = ['Videos/BestVideo.mp4', 'Videos/gamegrumps.mp4', 'Videos/walk.mp4'];
 var currentVideo = 0;
 var vidPlayer = document.getElementById('videoPlayer');
 
+/*
+	startVideo - sets current song
+*/
 function startVideo() {
 	vidPlayer.src = videos[currentVideo];
 }
 
+/*
+	prevVideo - goes to previous video in list
+*/
 function prevVideo() {
 	
 	if(currentVideo == 0) {
@@ -204,6 +237,9 @@ function prevVideo() {
 	startVideo();
 }
 
+/*
+	nextVideo - goes to next video in list
+*/
 function nextVideo() {
 	if(currentVideo == videos.length-1) {
 		currentVideo = 0;
@@ -221,7 +257,7 @@ function nextVideo() {
 		- spyro (main)
 		- cafe/ lofi
 		- vampire
-		- diff holidays?
+		- diff holidays
 			- christmas
 			- halloween
 			- easter
@@ -245,6 +281,8 @@ var wall = document.getElementById('wall');
 var desk = document.getElementById('desk');
 var shelfInner = document.getElementById('shelfInner');
 var deskFront = document.getElementById('deskFront');
+
+// different themes 
 
 
 function changeToDragonTheme() {
