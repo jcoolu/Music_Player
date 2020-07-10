@@ -2,7 +2,7 @@
  
 ## Used
 
-http://www.talkerscode.com/webtricks/create-custom-audio-player-using-html5-and-javascript.php
+https://github.com/DaftCreation/Custom-Audio-Player/blob/master/Music%20Player.html
 
 JQuery
 
