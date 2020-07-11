@@ -23,6 +23,11 @@ wants to play some music or watch a video in their own personal setting.
 
 ### Play Any Music Playlist You Want
 
+To add your own songs to the playlist, simply
+change the list of videos in the variable "songs."
+Add the path to the song you want to add. 
+ 
+
 ```javascript
 // list of songs you want to play
 var songs = 
@@ -37,9 +42,23 @@ var posters =
 "Images/motivateicon.png"];
 ```
 
+Example:
+
+
 ![music](/ReadmeVI/music.gif)
 
 ### Customize your Space
+
+You can change:
+	- mousepad (image file)
+	- mug (image file)
+	- figurines (image file)
+	- board (image file)
+	- keyboard (image file)
+	- wall (color using hex)
+	- desk (color using hex)
+	- shelfInner (color using hex)
+	- deskFront (color using hex)
 
 ```javascript
 function changeToDragonTheme() {
@@ -58,14 +77,21 @@ function changeToDragonTheme() {
 ![backgrounds](/ReadmeVI/backgrounds.gif)
 
 ### Play Videos 
+
+To add your own videos to the playlist, simply
+change the list of videos in the variable "videos."
+Add the path to the video you want to add. 
  
 ```javascript
 // list of videos being played
 var videos = 
-['Videos/BestVideo.mp4', 
-'Videos/gamegrumps.mp4', 
-'Videos/walk.mp4'];
+['Videos/firstVideo.mp4', 
+'Videos/secondVideo.mp4', 
+'Videos/thirdVideo.mp4'];
 ``` 
+Example:
+
+![example](/ReadmeVI/videoEX.gif)
  
 ![videos](/ReadmeVI/videos.gif) 
  
