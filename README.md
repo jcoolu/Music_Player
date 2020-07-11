@@ -21,7 +21,7 @@ wants to play some music or watch a video in their own personal setting.
  
 ## Features <a name = "Features"></a> 
 
-- Play Any Music Playlist You Want
+### Play Any Music Playlist You Want
 
 ```javascript
 // list of songs you want to play
@@ -39,7 +39,7 @@ var posters =
 
 ![music](/ReadmeVI/music.gif)
 
-- Customize your Space
+### Customize your Space
 
 ```javascript
 function changeToDragonTheme() {
@@ -57,7 +57,7 @@ function changeToDragonTheme() {
 
 ![backgrounds](/ReadmeVI/backgrounds.gif)
 
-- Play Videos 
+### Play Videos 
  
 ```javascript
 // list of videos being played
@@ -82,9 +82,10 @@ https://nodejs.org/en/download/
  
 ### Installing Electron
 
-```npm install electron -g```
+```command
+npm install electron -g```
  
-###Installing jQuery
+### Installing jQuery
 
 ```npm install jquery```
  
