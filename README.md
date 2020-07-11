@@ -43,7 +43,7 @@ Libraries/Frameworks Used:
  
 
 npm install jquery
- 
+
  
 ## Credits <a name = "credits"></a>
 

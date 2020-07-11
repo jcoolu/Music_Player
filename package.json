@@ -4,11 +4,11 @@
   "description": "Music Player App",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcoolu/Music-Player.git"
+    "url": "git+https://github.com/jcoolu/Music_Player.git"
   },
   "author": "jcoolu (Jamie Coulombe)",
   "license": "ISC",
@@ -24,5 +24,8 @@
     "popper.js": "^1.16.1",
     "sqlite": "^4.0.10",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron": "^9.1.0"
   }
 }
