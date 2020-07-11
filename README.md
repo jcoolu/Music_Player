@@ -82,8 +82,7 @@ https://nodejs.org/en/download/
  
 ### Installing Electron
 
-```command
-npm install electron -g```
+```npm install electron -g```
  
 ### Installing jQuery
 
