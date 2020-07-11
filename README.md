@@ -23,11 +23,15 @@ wants to play some music or watch a video in their own personal setting.
 
 - Play Any Music Playlist You Want
 
-![opening](/ReadmeVI/music.gif)
+![music](/ReadmeVI/music.gif)
 
 - Customize your Space
 
+![backgrounds](/ReadmeVI/backgrounds.gif)
+
 - Play Videos 
+ 
+![videos](/ReadmeVI/videos.gif) 
  
 ## How to Install <a name = "how-to-install"></a>
 
