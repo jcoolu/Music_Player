@@ -44,6 +44,7 @@ var posters =
 
 Example:
 
+![example](/ReadmeVI/musicEX.gif)
 
 ![music](/ReadmeVI/music.gif)
 
