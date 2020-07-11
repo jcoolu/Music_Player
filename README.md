@@ -23,7 +23,7 @@ wants to play some music or watch a video in their own personal setting.
 
 - Play Any Music Playlist You Want
 
-```
+```javascript
 // list of songs you want to play
 var songs = 
 ["Music/spyro.mp3", 
@@ -41,7 +41,7 @@ var posters =
 
 - Customize your Space
 
-```
+```javascript
 function changeToDragonTheme() {
 	mousepad.src = "Images/mousepad.png";
 	mug.src = "Images/spyro_mug.gif";
@@ -59,7 +59,7 @@ function changeToDragonTheme() {
 
 - Play Videos 
  
-```
+```javascript
 // list of videos being played
 var videos = 
 ['Videos/BestVideo.mp4', 
@@ -82,11 +82,11 @@ https://nodejs.org/en/download/
  
 ### Installing Electron
 
-npm install electron -g
+```npm install electron -g```
  
 ###Installing jQuery
 
-npm install jquery
+```npm install jquery```
  
 ## Credits <a name = "credits"></a>
 
