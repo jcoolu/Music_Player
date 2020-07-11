@@ -9,7 +9,7 @@ Music Player that was made with JavaScript using Electron and jQuery.
 - [How to Install](#how-to-install)
 - [Credits](#credits) 
  
-## Information <a name = "information> </a>
+## Information <a name = "information"> </a>
 
 This was a personal project that I created to get familiar with using JavaScript frameworks such as electron and jQuery. 
 I created a program that is customizable and able to 
@@ -22,6 +22,8 @@ wants to play some music or watch a video in their own personal setting.
 ## Features <a name = "Features"></a> 
 
 - Play Any Music Playlist You Want
+
+![opening](/ReadmeVI/music.gif)
 
 - Customize your Space
 
