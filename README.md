@@ -25,7 +25,8 @@ wants to play some music or watch a video in their own personal setting.
 
 To add your own songs to the playlist, simply
 change the list of videos in the variable "songs."
-Add the path to the song you want to add. 
+Add the path to the song you want to add and make sure
+to add a picture as well to the "posters" variable. 
  
 
 ```javascript
@@ -103,7 +104,7 @@ Libraries/Frameworks Used:
  - electron
  - node.js
  
-### Installing Node (needed in order to use npm command)
+### Installing Node (required in order to use npm command)
 
 https://nodejs.org/en/download/
  
