@@ -23,13 +23,49 @@ wants to play some music or watch a video in their own personal setting.
 
 - Play Any Music Playlist You Want
 
+```
+// list of songs you want to play
+var songs = 
+["Music/spyro.mp3", 
+"Music/hip.mp3", 
+"Music/stop.mp3"];
+
+// assigned pictures according to order of song list
+var posters = 
+["Images/spyro.png", 
+"Images/Button.png", 
+"Images/motivateicon.png"];
+```
+
 ![music](/ReadmeVI/music.gif)
 
 - Customize your Space
 
+```
+function changeToDragonTheme() {
+	mousepad.src = "Images/mousepad.png";
+	mug.src = "Images/spyro_mug.gif";
+	figurines.src = "Images/spyro.png";
+	board.src = "Images/board.png";
+	keyboard.src = "Images/keyboard.png";
+	wall.style.backgroundColor = "#dab3ff";
+	desk.style.backgroundColor = "#994d00";
+	shelfInner.style.backgroundColor = "#804000";
+	deskFront.style.backgroundColor = "#804000";
+}
+```
+
 ![backgrounds](/ReadmeVI/backgrounds.gif)
 
 - Play Videos 
+ 
+```
+// list of videos being played
+var videos = 
+['Videos/BestVideo.mp4', 
+'Videos/gamegrumps.mp4', 
+'Videos/walk.mp4'];
+``` 
  
 ![videos](/ReadmeVI/videos.gif) 
  
@@ -40,10 +76,17 @@ Libraries/Frameworks Used:
  - electron
  - node.js
  
+### Installing Node (needed in order to use npm command)
+
+https://nodejs.org/en/download/
  
+### Installing Electron
+
+npm install electron -g
+ 
+###Installing jQuery
 
 npm install jquery
-
  
 ## Credits <a name = "credits"></a>
 
